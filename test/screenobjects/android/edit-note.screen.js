@@ -16,9 +16,9 @@ class EditNoteScreen{
 
         await expect(AddNoteScreen.editingLabel).toBeDisplayed();
 
-        await AddNoteScreen.titleText.setValue("Fav Anime List");
+        await AddNoteScreen.titleText.setValue(noteHeading);
 
-        await AddNoteScreen.editNote.setValue("Tiger\nElephant\nLion");
+        await AddNoteScreen.editNote.setValue(noteBody);
 
         await driver.back();
         await driver.back();

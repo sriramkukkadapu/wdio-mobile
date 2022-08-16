@@ -25,7 +25,7 @@ exports.config = {
     //
     specs: [
         // './test/specs/androidNative.spec.js'
-        './test/specs/android/add-note-pom.spec.js'
+        './test/specs/ios/ios-todo-pom.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -69,16 +69,41 @@ exports.config = {
         // excludeDriverLogs: ['bugreport', 'server'],
         },
         */
-       {
-            platformName: "Android",
-            "appium:platformVersion": "11.0",
-            "appium:deviceName": "Pixel 3",
-            "appium:automationName": "UIAutomator2", //for ios it is XCUITest
-            // "appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
-            "appium:app": path.join(process.cwd(),"./app/android/ColorNote+Notepad.apk"),
-            "appium:autoGrantPermissions": true
+       
+        /* =========== Android =========== */ 
+    //     {
+    //         platformName: "Android",
+    //         "appium:platformVersion": "11.0",
+    //         "appium:deviceName": "Pixel 3",
+    //         "appium:automationName": "UIAutomator2", //for ios it is XCUITest
+    //         // "appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
+    //         "appium:app": path.join(process.cwd(),"./app/android/ColorNote+Notepad.apk"),
+    //         "appium:autoGrantPermissions": true
 
-       }
+    //    },
+
+    //    {
+    //     platformName: "ios",
+    //     "appium:platformVersion": "15.5",  //this version find in ur xcode -> window menu -> devices & simluators check version for iphone 12 device put it here
+    //     "appium:deviceName": "iPhone 12",
+    //     "appium:automationName": "XCUITest", //for ios it is XCUITest
+    //     "appium:app": path.join(process.cwd(),"./app/ios/UIKitCatalog.app"),
+    //     "appium:autoGrantPermissions": true
+
+    //     },
+
+
+        {
+            platformName: "ios",
+            "appium:platformVersion": "14.5",  //this version find in ur xcode -> window menu -> devices & simluators check version for iphone 12 device put it here
+            "appium:deviceName": "iPhone 12",
+            "appium:automationName": "XCUITest", //for ios it is XCUITest
+            "appium:app": path.join(process.cwd(),"./app/ios/MVCTodo.app"),
+            "appium:autoGrantPermissions": true
+    
+            }
+
+
     ],
     //
     // ===================

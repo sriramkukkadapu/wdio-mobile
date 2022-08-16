@@ -107,3 +107,43 @@ await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollTextI
 await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollForward()');
 
 
+# iOS setup
+
+1) install xcode
+2) install xcode command line tools
+xcode-select --install
+3) install carthage
+brew install carthage
+4) verify everything using appium-doctor
+appium-doctor --ios
+5) appium driver list
+verify xcuitest is present
+appium driver install xcuitest
+
+
+# ios class chain locator strategy
+https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules
+const alertText = '**/XCUIElementTypeStaticText[`label == "Alert Views"`]';
+const alertText = '**/XCUIElementTypeStaticText[`label CONTAINS "Alert"`]';
+await $(`-ios class chain:${alertText}`).click();
+
+# ios predicate string locator strategy
+https://github.com/facebookarchive/WebDriverAgent/wiki/Predicate-Queries-Construction-Rules
+// const alertText = 'label == "Alert Views"';
+const alertText = 'value BEGINSWITH[c] "alert"';
+await $(`-ios predicate string:${alertText}`).click();
+
+# ios how to do scrolling & select value from picker
+//scroll screen down
+await driver.execute('mobile:scroll', {direction: "down"})
+//scroll screen up
+await driver.execute('mobile:scroll', {direction: "up"})
+
+// scroll a particular element
+const redPicker = await $('~Red color component value');
+await driver.execute('mobile:scroll', {element: redPicker.elementId, direction: "down"})
+
+// set value to picker
+await redPicker.addValue('125'); 
+
+
