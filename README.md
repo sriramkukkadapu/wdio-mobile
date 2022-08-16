@@ -147,3 +147,28 @@ await driver.execute('mobile:scroll', {element: redPicker.elementId, direction: 
 await redPicker.addValue('125'); 
 
 
+# Created separate configs for iOS & Android
+
+# To run tests with iOS config
+npx wdio ./config/wdio.ios.conf.js
+
+# To run tests with Android config
+npx wdio ./config/wdio.android.conf.js
+
+# Hooks execution order
+Before hook
+Before each hook
+After hook
+After each hook
+
+# Browser stack setup.
+Browser stack create account
+upload app file and copy the path
+For this separate config file we have created 
+
+run it using below command
+npx wdio ./config/wdio.android.bs.conf.js
+
+In browserstack dashboard view the execution
+https://app-automate.browserstack.com/dashboard/v2
+

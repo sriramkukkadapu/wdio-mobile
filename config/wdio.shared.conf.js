@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 
 exports.config = {
     //
@@ -6,7 +6,7 @@ exports.config = {
     // Runner Configuration
     // ====================
     //
-    port: 4723,
+    // port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -23,10 +23,10 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        // './test/specs/androidNative.spec.js'
-        './test/specs/ios/ios-todo-pom.spec.js'
-    ],
+    // specs: [
+    //     // './test/specs/androidNative.spec.js'
+    //     './test/specs/ios/ios-todo-pom.spec.js'
+    // ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -53,7 +53,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
+    // capabilities: [
        /* {
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
@@ -82,7 +82,6 @@ exports.config = {
 
     //    },
 
-    /* =========== iOS =========== */ 
     //    {
     //     platformName: "ios",
     //     "appium:platformVersion": "15.5",  //this version find in ur xcode -> window menu -> devices & simluators check version for iphone 12 device put it here
@@ -94,18 +93,18 @@ exports.config = {
     //     },
 
 
-        {
-            platformName: "ios",
-            "appium:platformVersion": "14.5",  //this version find in ur xcode -> window menu -> devices & simluators check version for iphone 12 device put it here
-            "appium:deviceName": "iPhone 12",
-            "appium:automationName": "XCUITest", //for ios it is XCUITest
-            "appium:app": path.join(process.cwd(),"./app/ios/MVCTodo.app"),
-            "appium:autoGrantPermissions": true
+    //     {
+    //         platformName: "ios",
+    //         "appium:platformVersion": "14.5",  //this version find in ur xcode -> window menu -> devices & simluators check version for iphone 12 device put it here
+    //         "appium:deviceName": "iPhone 12",
+    //         "appium:automationName": "XCUITest", //for ios it is XCUITest
+    //         "appium:app": path.join(process.cwd(),"./app/ios/MVCTodo.app"),
+    //         "appium:autoGrantPermissions": true
     
-            }
+    //         }
 
 
-    ],
+    // ],
     //
     // ===================
     // Test Configurations
@@ -148,21 +147,21 @@ exports.config = {
     //
     // Default request retries count
     connectionRetryCount: 3,
-    //
-    // Test runner services
-    // Services take over a specific job you don't want to take care of. They enhance
-    // your test setup with almost no effort. Unlike plugins, they don't add new
-    // commands. Instead, they hook themselves up into the test process.
-    services: [
-        ['appium', {
-        args: {
-            address: 'localhost',
-            port: 4723
-        },
-        logPath: './'
+//     //
+//     // Test runner services
+//     // Services take over a specific job you don't want to take care of. They enhance
+//     // your test setup with almost no effort. Unlike plugins, they don't add new
+//     // commands. Instead, they hook themselves up into the test process.
+//     services: [
+//         ['appium', {
+//         args: {
+//             address: 'localhost',
+//             port: 4723
+//         },
+//         logPath: './'
 
-     }]
-],
+//      }]
+// ],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
