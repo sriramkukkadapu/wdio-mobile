@@ -15,7 +15,7 @@ describe('notes app test', async ()=>{
 
         await expect($('//*[@text="Editing"]')).toBeDisplayed();
 
-        await $("//*[@resource-id='com.socialnmobile.dictapps.notepad.color.note:id/edit_title']").setValue("Fav Anime List");
+        await $("//*[@resource-id='com.socialnmobile.dictapps.notepad.color.note:id/edit_title']").setValue("Anime List");
 
         await $("//*[@resource-id='com.socialnmobile.dictapps.notepad.color.note:id/edit_note']").setValue("Tiger\nElephant\nLion");
 
@@ -44,7 +44,7 @@ describe('notes app test', async ()=>{
         await $('//*[@text="Trash Can"]').click();
 
         //fav anime list displayed
-        await expect($('//*[@text="Fav Anime List"]')).toBeDisplayed();
+        await expect($('//*[@text="Anime List"]')).toBeDisplayed();
 
 
 
