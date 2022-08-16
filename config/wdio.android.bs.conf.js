@@ -9,6 +9,9 @@ const { config } = require('./wdio.shared.conf');
 config.user = process.env.BROWSERSTACK_USER;
 config.key = process.env.BROWSERSTACK_KEY;
 
+// config.user = process.env.BS_USER;
+// config.key = process.env.BS_KEY;
+
 
 //==============
 // specs
