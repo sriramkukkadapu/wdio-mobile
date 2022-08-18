@@ -172,3 +172,22 @@ npx wdio ./config/wdio.android.bs.conf.js
 In browserstack dashboard view the execution
 https://app-automate.browserstack.com/dashboard/v2
 
+# Browserstack resources:
+https://webdriver.io/docs/browserstack-service/
+https://www.browserstack.com/app-automate/capabilities
+
+# Env package to maintain credentials
+https://www.npmjs.com/package/dotenv
+
+
+# Auto completion
+https://webdriver.io/docs/autocompletion/#visual-studio-code-vscode
+
+# Setup Babel
+https://webdriver.io/docs/babel/
+
+# Setup Lint
+https://www.npmjs.com/package/eslint-plugin-wdio
+
+# WebdriverIO github actions
+https://webdriver.io/docs/githubactions/
