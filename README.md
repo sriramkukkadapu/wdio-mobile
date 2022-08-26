@@ -17,41 +17,41 @@ export PATH="/Users/sriramku/Downloads/apache-jmeter-5.5/bin:${ANDROID_HOME}/emu
 -in releases install latest dmg file
 
 ## Install appium
-```
+```console
 npm install -g appium@next
 npm i appium@2.0.0-beta.43
 sudo npm install -g appium@2.0.0-beta.43
 ```
 
 ## Install appium doctor
-```
+```console
 npm install -g appium-doctor
 ```
 
 ## Use appium-doctor to verify things
-```
+```console
 appium-doctor --android -> To check if android setup is fine
 appium-doctor --ios -> To check if ios setup is fine
 ```
 
 ## install the Appium drivers
-```
+```console
 npx appium driver list
-```
 npx appium driver install xcuitest
 npx appium driver install uiautomator2
+```
 
 Now to verify if its been installed, you can run - appium driver list
 
 ## Setup project
-```
+```console
 npm init -y
 npm install @wdio/cli
 npx wdio config
 ```
 
 ## start appium locally
-```
+```console
 appium driver list
 appium -p 4724
 appium driver install uiautomator2
@@ -61,7 +61,7 @@ appium driver install xcuitest
 ## appium inspector
 
 Start appium on terminal
-```appium -p 4724```
+`appium -p 4724`
 
 - Start desired emulator
 - In appium inspector
@@ -75,9 +75,9 @@ Start appium on terminal
 
 ## To run tests 
 
-- ```source ~/.bash_wdio```
+- `source ~/.bash_wdio`
 - Keep desired emulator open
-- ```npx wdio```
+- `npx wdio`
 
 wdio will start appium service by itself on port 4723 and run tests on the emulator.
 
@@ -173,15 +173,12 @@ await redPicker.addValue('125');
 - After hook
 - After each hook
 
-## Browser stack setup.
-
+## Browser stack setup
 - Browser stack create account
 - upload app file and copy the path
 - For this separate config file we have created 
-
 - run it using below command
-``` npx wdio ./config/wdio.android.bs.conf.js ```
-
+`npx wdio ./config/wdio.android.bs.conf.js`
 - In browserstack dashboard view the execution
 - https://app-automate.browserstack.com/dashboard/v2
 
