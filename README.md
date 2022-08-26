@@ -1,5 +1,8 @@
 Course referred: Dilpreet Johal Udemy wdio
 
+## Install Java 8, Open JDK from below link
+- https://adoptium.net/temurin/releases?version=8
+
 ## Install android studio & setup env variables, emulator
 
 Vi ~/.bash_profile would look like this
@@ -10,8 +13,8 @@ export PATH="/Users/sriramku/Downloads/apache-jmeter-5.5/bin:${ANDROID_HOME}/emu
 ```
 
 ## Install appium inspector
-https://github.com/appium/appium-inspector
-in releases install latest dmg file
+- https://github.com/appium/appium-inspector
+-in releases install latest dmg file
 
 ## Install appium
 ```
@@ -165,22 +168,22 @@ await redPicker.addValue('125');
 ```npx wdio ./config/wdio.android.conf.js```
 
 ## Hooks execution order
-Before hook
-Before each hook
-After hook
-After each hook
+- Before hook
+- Before each hook
+- After hook
+- After each hook
 
 ## Browser stack setup.
 
-Browser stack create account
-upload app file and copy the path
-For this separate config file we have created 
+- Browser stack create account
+- upload app file and copy the path
+- For this separate config file we have created 
 
-run it using below command
+- run it using below command
 ``` npx wdio ./config/wdio.android.bs.conf.js ```
 
-In browserstack dashboard view the execution
-https://app-automate.browserstack.com/dashboard/v2
+- In browserstack dashboard view the execution
+- https://app-automate.browserstack.com/dashboard/v2
 
 ## Browserstack resources:
 - https://webdriver.io/docs/browserstack-service/
