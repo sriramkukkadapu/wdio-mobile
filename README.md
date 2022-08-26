@@ -1,12 +1,5 @@
 Course referred: Dilpreet Johal Udemy wdio
 
-## Appium resources - Just FYI
-https://github.com/SrinivasanTarget/awesome-appium#server
-
-- Java - 1.11
-- Node - 16
-- Appium - 2.0
-
 ## Install android studio & setup env variables, emulator
 
 Vi ~/.bash_profile would look like this
@@ -208,3 +201,10 @@ https://app-automate.browserstack.com/dashboard/v2
 
 ## WebdriverIO github actions
 - https://webdriver.io/docs/githubactions/
+
+## Additional - Appium resources - Just FYI
+https://github.com/SrinivasanTarget/awesome-appium#server
+
+- Java - 1.11
+- Node - 16
+- Appium - 2.0
