@@ -48,7 +48,7 @@ describe('Android Elements tests', () => {
         await $('//android.widget.TextView[@text="Command two"]').click();
 
         const ele = await $('//android.widget.TextView');
-        expect(ele).toHaveText("You selected: 1 , Command two");
+        await expect(ele).toHaveText("You selected: 1 , Command two");
     })
 
     it('Find BY UI automator2', async () => {
@@ -65,6 +65,6 @@ describe('Android Elements tests', () => {
         const textField = await $('//*[@resource-id="io.appium.android.apis:id/edit"]');
         await textField.addValue("Canada");
         await $('~Give me Focus').click();
-        expect(textField).toHaveText("Canada");
+        await expect(textField).toHaveText("Canada");
     })
 });
