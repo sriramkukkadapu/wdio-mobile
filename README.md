@@ -6,7 +6,7 @@ Course referred: Dilpreet Johal Udemy wdio
 ## Install android studio & setup env variables, emulator
 
 Vi ~/.bash_profile would look like this
-```
+```console
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH="/Users/sriramku/Downloads/apache-jmeter-5.5/bin:${ANDROID_HOME}/emulator:${JAVA_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}"
