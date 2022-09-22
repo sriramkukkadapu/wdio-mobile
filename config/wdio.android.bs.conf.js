@@ -33,7 +33,8 @@ config.capabilities = [
             "appium:automationName": "UIAutomator2", //for ios it is XCUITest
             // "appium:app": path.join(process.cwd(),"./app/android/ApiDemos-debug.apk"),
             // "appium:app": path.join(process.cwd(),"./app/android/ColorNote+Notepad.apk"),
-            "appium:app": "bs://f97d601cbf99cbf144d78adced66122141243836",
+            // "appium:app": "bs://f97d601cbf99cbf144d78adced66122141243836",
+            "appium:app": "bs://d24af7cc086014da7f6c35421217e05c6f55e254",
             "appium:autoGrantPermissions": true
 
        }
